@@ -11,7 +11,7 @@ git commit --amend -m "新的提交信息"
 3. .gitignore使用
 ① **/foo: 忽略/foo, a/foo, a/b/foo等
 
-4.首次在github创建仓库后的操作
+5. 首次在github创建仓库后的操作
 git init .
 git add .
 git commit -m "提交的信息"
@@ -19,8 +19,8 @@ git remote add origin  <远程仓库的URL地址>
 git pull --rebase origin master // 拉去首次文件
 git push -u origin master
 
-5.首次在当前分支拉去其他分支代码
-1.  git fetch origin 拉去的分支名
-2.  git merge origin/拉去的分支名
+6. 首次在当前分支拉去其他分支代码
+   1.  git fetch origin 拉去的分支名
+   2.  git merge origin/拉去的分支名
 
 6. git diff 查看分支与分支之间的版本差异
