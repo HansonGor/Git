@@ -1,0 +1,151 @@
+@import "/modules/travel/common.wxss";
+
+.add_travel_page {
+    width: 100%;
+    height: 100%;
+}
+
+.certificate_wrapper 
+.certificate_warn {
+    padding-left: 28rpx;
+    padding-top: 42rpx;
+    font-size: 28rpx;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: rgba(121, 134, 145, 1);
+    margin-bottom: 30rpx;
+}
+
+.certificate_wrapper 
+.certificate_content {
+    padding: 16rpx 32rpx 6rpx 32rpx;
+    background: #ffffff;
+    box-shadow:0rpx 4rpx 8rpx 0rpx rgba(26,0,0,0.08);
+}
+
+.certificate_wrapper 
+.certificate_content
+.certificate_type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificate_wrapper
+.certificate_content:nth-of-type(2)
+.certificate_type {
+    border-bottom: 1px solid rgba(209, 217, 224, 1);
+}
+
+.certificate_wrapper 
+.certificate_title {
+    font-size: 28rpx;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: rgba(0, 35, 78, 1);
+    line-height: 104rpx
+}
+
+.certificate_wrapper 
+.certificate_type 
+.certificate {
+    font-size: 28rpx;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: rgba(0, 35, 78, 1);
+    line-height: 104rpx;
+    margin-right: 30rpx;
+}
+
+/* .certificate_wrapper 
+.certificate_type 
+.certificate::after {
+    content: '';
+    display: inline-block;
+    border: 10rpx solid;
+    line-height: 104rpx;
+    margin-left: 16rpx;
+    border-color: rgba(0,138,203,1) transparent transparent transparent;
+} */
+
+.certificate_wrapper 
+.certificate_type 
+.certificate
+.certificate_arrow
+ {
+    display: inline-block;
+    border: 10rpx solid;
+    line-height: 104rpx;
+    margin-left: 16rpx;
+    border-color: rgba(0,138,203,1) transparent transparent transparent;
+    animation: ArrowRotate 0.3s ease-out forwards;
+    transform-origin: 50% 25%;
+}
+
+.certificate_wrapper 
+.certificate_type 
+.certificate
+.certificate_arrow_acitve{
+    animation: ArrowRotateActive 0.5s ease-out forwards !important;
+}
+
+@keyframes ArrowRotate {
+    0% {rotate: 180deg;}
+    100% {rotate: 360deg;}
+}
+
+@keyframes ArrowRotateActive {
+    0% {rotate: 0deg;}
+    100% {rotate: 180deg;}
+}
+
+
+.certificate_wrapper 
+.certificate_type 
+.certificate_number {
+    font-size:28rpx;
+    font-family:PingFang SC;
+    font-weight:500;
+    line-height:104rpx;
+    height:104rpx;
+    width: 420rpx;
+    margin-right: 30rpx;
+}
+
+.warn_wrapper{
+    padding-left: 31rpx;
+    padding-top:50rpx;
+}
+.warn_wrapper .warn_tips{
+    font-size:28rpx;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(0,35,78,1);
+    margin-bottom: 30rpx;
+}
+
+.warn_wrapper .warn_tip{
+    font-size:28rpx;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(121,134,145,1);
+    line-height:48rpx;
+}
+
+.add_travel_button_wrapper{
+    margin-top: 98rpx;
+}
+.add_travel_button_wrapper
+.add_travel_button {
+    margin:0 auto;
+    width:660rpx;
+    height:88rpx;
+    background:rgba(229,0,74,1);
+    box-shadow:0px 4rpx 12rpx 0rpx rgba(0, 0, 0, 0.2);
+    border-radius:44rpx;
+    line-height: 88rpx;
+}
+
+.add_travel_button_wrapper
+.add_travel_button_active {
+    background:rgb(250, 6, 84);
+}

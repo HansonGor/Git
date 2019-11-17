@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText":"添加行程",
+  "backgroundColor":"#008ACB",
+  "backgroundTextStyle":"light",
+  "navigationBarBackgroundColor":"#008ACB",
+  "navigationBarTextStyle":"white",
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+    "han-action-sheet": "./HanActionSheet/HanActionSheet"
+  }
+}

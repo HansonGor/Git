@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="add_travel_page">
+        <view class="certificate_wrapper">
+            <view class="certificate_warn">请输入您的客票号或证件号</view>
+            <view class="certificate_content">
+                <view class="certificate_type">
+                    <view class="certificate_title">凭证类型</view>
+                    <view class="certificate" bindtap="openDialog">
+                        {{certificate}}
+                        <view class="{{isShowDialog?'certificate_arrow certificate_arrow_acitve':'certificate_arrow'}}"></view>
+                    </view>
+                </view>
+            </view>
+            <view class="certificate_content">
+                <view class="certificate_type">
+                    <view class="certificate_title">凭证号码</view>
+                    <input type="number" placeholder="请输入784开头的13位数字的票号" class="certificate_number" maxlength="13" />
+                </view>
+            </view>
+        </view>
+        <view class="warn_wrapper">
+            <view class="warn_tips">温馨提示</view>
+            <view class="warn_tip">1.仅限添加您本人的行程；</view>
+            <view class="warn_tip">2.输入证件时，请仔细核对。</view>
+        </view>
+        <view class="add_travel_button_wrapper">
+            <button size="default" type="warn" class="add_travel_button" hover-class="add_travel_button_active">
+                添加
+            </button>
+        </view>
+    </view>
+    <han-action-sheet isShowDialog="{{isShowDialog}}" options="{{certificateType}}" bind:callback="getCertificateType"></han-action-sheet>
+</view>

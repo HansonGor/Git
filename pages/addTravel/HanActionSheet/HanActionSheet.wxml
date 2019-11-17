@@ -1,0 +1,19 @@
+<view class="page">
+    <view class="han-action-sheet {{isShowDialog ? 'han-action-sheet_show' : ''}}" bindtap="closeDialog">
+        <view class="han-dialog {{isShowDialog ? 'han-dialog_show' : ''}}">
+            <view class="han-actionsheet {{isShowDialog ? 'han-actionsheet_toggle' : ''}}">
+                <view class="han-action-sheet-type">
+                    <view class="han-actionsheet__title">
+                        <view class="han-actionsheet__title-text">{{options.title}}</view>
+                    </view>
+                    <view class="han-actionsheet__menu">
+                        <view class="han-actionsheet__cell" wx:for="{{options.types}}" wx:key="{{item}}" catchtap="confirmDialog" data-type="{{item}}">{{item}}</view>
+                    </view>
+                </view>
+                <view class="han-actionsheet__action">
+                    <view class="han-actionsheet__cell" catchtap="closeDialog">{{options.effectText}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
